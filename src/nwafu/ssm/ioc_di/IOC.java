@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class IOC {
     public static void main(String[] args) {
         //初始化容器
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("nwafu/ssm/ioc_di/applicationContext.xml");
         //从容器中获取bean
         UserDao userDao = (UserDao) applicationContext.getBean("UserDao");
         //运行方法

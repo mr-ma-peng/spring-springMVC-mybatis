@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="UserDao" class="nwafu.ssm.ioc_di.UserDaoImpl"></bean>
+    <bean id="UserDao" class="nwafu.ssm.ioc_di.UserDaoImpl" scope="singleton"></bean>
     <bean id="UserService" class="nwafu.ssm.ioc_di.UserServiceImpl">
         <property name="userDao" ref="UserDao"></property>
     </bean>

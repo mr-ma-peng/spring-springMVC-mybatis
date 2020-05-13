@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="user1" class="nwafu.ssm.assemble.User">
+        <constructor-arg index="0" value="mapeng"></constructor-arg>
+        <constructor-arg name="password" value="123456"></constructor-arg>
+        <constructor-arg index="2">
+            <list>
+                <value>"list[0]"</value>
+                <value>"list[1]"</value>
+            </list>
+        </constructor-arg>
+    </bean>
+    <bean id="user2" class="nwafu.ssm.assemble.User">
+        <property name="userName" value="maqiang"></property>
+        <property name="password" value="654321"></property>
+        <property name="list">
+            <list>
+                <value>list[0]</value>
+                <value>list[1]</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>

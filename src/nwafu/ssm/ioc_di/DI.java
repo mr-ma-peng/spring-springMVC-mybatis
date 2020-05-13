@@ -5,7 +5,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class DI {
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        //初始化容器
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("nwafu/ssm/ioc_di/applicationContext.xml");
+        //获得bean
         UserService userService = (UserService) applicationContext.getBean("UserService");
         userService.login();
     }
