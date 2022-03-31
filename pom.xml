@@ -31,7 +31,7 @@
             <!--创建和管理bean，配置文件读写，进行IOC和DI的相关类-->
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>4.3.19.RELEASE</version>
+            <version>5.3.18</version>
         </dependency>
         <dependency>
             <!--扩展服务-->
