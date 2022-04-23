@@ -25,7 +25,7 @@
             <!--核心工具类-->
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.3.19.RELEASE</version>
+            <version>5.3.19</version>
         </dependency>
         <dependency>
             <!--创建和管理bean，配置文件读写，进行IOC和DI的相关类-->
